@@ -1,0 +1,7 @@
+
+todos
+- proper scaling
+- better sprites
+- hitting side of block doesn't send player to the top
+- blocks are 16x16 sprites drawn to 8x8 on the canvas
+- player and enemy are 16x16 drawn to 16x16 on canvas

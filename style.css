@@ -1,0 +1,65 @@
+* {
+	image-rendering: pixelated;
+}
+body {
+  overflow: hidden;
+  background-color: gray;
+  font-family: Consolas, Courier New, Verdana;
+}
+
+#canv {
+  background-color: #121212;
+  position: absolute;
+}
+
+#container {
+  position: absolute;
+  text-align: center;
+}
+
+#hotbar {
+  display: inline-grid;
+  text-align: center;
+  grid-template-columns: 52px 52px 52px 52px 52px;
+}
+
+#hotbarContainer {
+	margin-top: 330px;
+}
+
+#activeItem{
+	margin: 0;
+	color: white;
+}
+
+.hotbar {
+  background-color: transparent;
+  border: 2px solid #818181b0;
+  color: rgb(189, 189, 189);
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 120ms;
+  outline: none;
+	width: 42px;
+  height: 42px;
+  transform: translateX(4px);
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	background-position: center;
+}
+
+.active {
+  background-color: #ffffff0f;
+  border: 2px solid #818181bd;
+  transform: translateY(-2px) translateX(2px);
+  width: 46px;
+  height: 46px;
+}
+
+.hotbar:hover {
+  width: 46px;
+  height: 46px;
+  transform: translateY(-2px) translateX(2px);
+  background-color: #ffffff1b;
+  border: 2px solid #818181cd;
+}

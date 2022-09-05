@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>OK</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>W,A,D to move<br>1,2,3,4,5 to change hotbar slots</p>
+  <!-- main canvas -->
+  <canvas id='canv'></canvas>
+  <!-- button -->
+  <div id="container">
+		<div id='hotbarContainer'>
+			<p id='activeItem'></p>
+			<div id="hotbar">
+     	 <button style='grid-area: 1 / 1' class="hotbar" onclick="hotbar(0)"></button>
+     	 <button style='grid-area: 1 / 2' class="hotbar" onclick="hotbar(1)"></button>
+ 	     <button style='grid-area: 1 / 3' class="hotbar" onclick="hotbar(2)"></button>
+ 	     <button style='grid-area: 1 / 4' class="hotbar" onclick="hotbar(3)"></button>
+ 	     <button style='grid-area: 1 / 5' class="hotbar" onclick="hotbar(4)"></button>
+    </div>
+		</div>
+    
+  </div>
+  <!-- config vars -->
+  <script src="config.js"></script>
+  <!-- player -->
+  <script src="player.js"></script>
+  <!-- enemy -->
+  <script src="enemy.js"></script>
+  <!-- map -->
+  <script src="map.js"></script>
+  <!-- renderer file -->
+  <script src="renderer.js"></script>
+  <!-- main script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
